@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Header from "./Components/Header";
 import Home from "./Components/Home";
@@ -11,8 +11,7 @@ import AdminLogin from "./Components/AdminLogin";
 
 function App() {
   return (
-    <HashRouter>
-    
+    <>
       <Header />
 
       <Routes>
@@ -22,12 +21,11 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/signup" element={<Signup />} />
 
-        {/* ✅ Admin Routes */}
+        {/* Admin Routes */}
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
-   
-    </HashRouter>
+    </>
   );
 }
 
