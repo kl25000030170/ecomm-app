@@ -12,7 +12,7 @@ import AdminLogin from "./Components/AdminLogin";
 function App() {
   return (
     <HashRouter>
-    <Router>
+    
       <Header />
 
       <Routes>
@@ -26,7 +26,7 @@ function App() {
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
-    </Router>
+   
     </HashRouter>
   );
 }
