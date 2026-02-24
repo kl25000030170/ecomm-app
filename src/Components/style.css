@@ -1,0 +1,412 @@
+header{
+ 
+    background-color: rgb(143, 227, 246);
+    color: rgb(244, 229, 143);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+ nav a{
+    color: rgb(23, 149, 228);
+    text-decoration: none;
+    margin: 0px 20px;
+    font-size: 20px;
+ }
+
+ #user-display{
+    position: absolute;
+    right: 20px;
+   top: 20px;
+  font-weight: bold;
+ }
+
+
+footer {
+  background-color: black;
+  color: whitesmoke;
+width: 100%;
+text-align: center;
+  padding: 15px ;
+  position: absolute;
+  bottom: 0;
+
+
+
+}
+.content {
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 50px;
+  background: linear-gradient(to right, #5665c5, #f8b16a);
+  color: rgb(238, 204, 100);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: rgb(255, 255, 255);
+  color: #e52e71;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ .highlights {
+  background-color: rgb(239, 239, 184);
+  padding: 60px 20px;
+  text-align: center;
+
+}
+
+.highlights h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: black;
+}
+
+.highlights ul {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+  padding: 0;
+}
+
+.highlights li {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+.products {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  gap: 30px;
+  min-height: 80vh;          /* take most of screen height */
+  padding: 40px;
+  background: #f5f7fa;
+  flex-wrap: wrap;
+}
+
+
+.product {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.pbtn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.pbtn:hover {
+  background: #3730a3;
+}
+.rr{
+  margin-top: 120px;
+}
+
+.ff {
+  width: 340px;
+  margin: 120px auto;
+  padding: 35px 30px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.25);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ff h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.ff input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.ff input:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 6px rgba(118,75,162,0.5);
+  outline: none;
+}
+
+.ff button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ff button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0,0,0,0.25);
+}
+
+.ff button:active {
+  transform: scale(0.98);
+}
+
+.p1b{
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #f9a4d4, rgb(89, 196, 232));
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.lo{
+     padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #f9a4d4, rgb(89, 196, 232));
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.cb{
+  margin-top: 180px;
+}
+.inclass{
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+ 
+  color: linear-gradient(135deg, #667eea, #764ba2);;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.rb{
+   margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.ap{
+  padding: 180px;
+}
+
+/* ===== ADMIN LOGIN ===== */
+
+.admin-login-box {
+  width: 340px;
+  margin: 120px auto;
+  padding: 35px 30px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.25);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.admin-login-box h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.admin-login-box input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.admin-login-box input:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 6px rgba(118,75,162,0.5);
+  outline: none;
+}
+
+.admin-login-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.admin-login-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0,0,0,0.25);
+}
+/* ===== ADMIN PAGE ===== */
+
+.admin-wrapper {
+  padding: 120px 40px;
+}
+
+.admin-products {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.admin-card {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.admin-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.admin-card h4 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.admin-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.admin-add-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.admin-add-btn:hover {
+  background: #3730a3;
+}
+
+/* Logout button */
+.admin-logout-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #f9a4d4, rgb(89, 196, 232));
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.admin-logout-btn:hover {
+  transform: translateY(-3px);
+}
+
+
+
+
